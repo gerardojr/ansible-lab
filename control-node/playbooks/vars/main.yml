@@ -1,0 +1,10 @@
+mysql_root_password: devopsmaonamassa
+mysql_databases:
+  - name: nodes
+    encoding: latin1
+    collation: latin1_general_ci
+mysql_users:
+  - name: nodesapp
+    host: "%"
+    password: devopsmaonamassa
+    priv: "nodes.*:ALL"
